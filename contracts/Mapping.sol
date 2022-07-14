@@ -8,6 +8,8 @@ contract Mapping {
     function get(address _addr) public view returns (uint) {
         // Mapping always returns a value.
         // If the value was never set, it will return the default value. In this case it would be 0.
+        // mappings return default values, probably annoying sometimes when checking values, maybe makes 
+        // nested mapping more useful. Boolean plus some uint/int
         return myMap[_addr];
     }
 
